@@ -1,0 +1,41 @@
+.explore{
+  background: url('../assets/explore.jpg');
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.274);
+  background-blend-mode: color;
+  padding: 20px 0;
+  
+
+  &__content{
+    padding:50px 20px;
+    max-width: 500px;
+    text-align: center;
+    margin: 50px 0;   
+  }
+  .title{
+    text-transform: uppercase;
+    color: white;
+    font-size: 40px;
+    margin: 20px 0;
+     
+  }
+  .description{
+    margin-bottom: 20px;
+    line-height: 1.5;
+    text-align: justify;
+    font-weight: bold;
+  }
+  .learn__more{
+      border: 0;
+      border-radius: 10px;
+      padding: 5px 10px;
+      color: rgb(2, 2, 2);
+      background-color: rgb(104, 248, 104);
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+      &:hover{
+        background-color: rgb(181, 255, 181);
+      }
+  }
+}

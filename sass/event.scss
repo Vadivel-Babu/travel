@@ -1,0 +1,62 @@
+.event{
+  padding:40px 20px;
+
+  &__title{
+    font-size: 25px;
+    
+    text-align: center;
+    position: relative;
+    width: max-content;
+    margin: 0 auto;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 70%;
+      right: 25px;
+      bottom: -8px;
+      height: 4px;
+      background-color:rgb(104, 248, 104);
+    }
+  }
+  .event__upcoming{
+    margin-top: 20px;
+    @media (min-width:650px) {
+      display: flex;
+      align-items: center; 
+      justify-content: center;
+      gap: 25px;    
+    }
+
+    &-card{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .holiday{
+      width: 100%;
+      @media (min-width:650px) {
+        width: 300px;
+        height: 200px;        
+      }
+    }
+    .description{
+      max-width: 250px;
+      text-align: center;
+    }
+    .learn__more{
+      border: 0;
+      border-radius: 10px;
+      padding: 5px 10px;
+      color: rgb(2, 2, 2);
+      background-color: rgb(104, 248, 104);
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+      &:hover{
+        background-color: rgb(181, 255, 181);
+      }
+    }
+  }
+
+}
